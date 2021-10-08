@@ -1,0 +1,70 @@
+@import "../varibales";
+@import "../app.scss";
+
+.card-course {
+  width: 340px;
+  background-color: $bgthird;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  direction: rtl;
+  font-family: $droidFont;
+  margin: 0px auto;
+  .title-level-course {
+    font-size: 28px;
+    background-color: $yellowColor;
+    margin: 10px 0px;
+    padding: 5px 0px;
+    text-align: center;
+    color: $redColor;
+    border-radius: 8px;
+  }
+  @keyframes price {
+    0% {
+      color: $blueSecondColor;
+    }
+    100% {
+      color: $blueThirdColor;
+    }
+  }
+  .price-course {
+    font-size: 45px;
+    color: $blueSecondColor;
+    font-weight: bold;
+    text-align: center;
+    font-family: $tahoma;
+    animation: price 300ms ease-in-out infinite alternate;
+  }
+  .small-info {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    color: $redColor;
+  }
+  .features-list {
+    margin: 15px 0px 25px;
+    list-style: none;
+    .feature-item {
+      font-size: 18px;
+      margin: 5px 0px;
+      i {
+        margin-left: 10px;
+        color: $redColor;
+      }
+    }
+  }
+  .regester-final {
+    border: 4px solid $blueSecondColor;
+    color: $blueSecondColor;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+    &:hover {
+      background-color: $blueSecondColor;
+      color: $whiteColor;
+    }
+  }
+}

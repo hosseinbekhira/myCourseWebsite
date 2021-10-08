@@ -1,0 +1,317 @@
+@import "../varibales";
+@import "../app.scss";
+
+.intro-front {
+  background-color: $bgSecond;
+  font-family: $droidFont;
+  direction: rtl;
+  padding: 20px;
+  h2 {
+    font-size: 34px;
+    color: $whiteColor;
+    text-align: center;
+    @media (min-width: 576px) and (max-width: 856px) {
+      font-size: 30px;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 24px;
+    }
+  }
+  .first {
+    margin-bottom: 20px;
+  }
+  .second {
+    font-family: $tahoma;
+    margin-bottom: 20px;
+  }
+  p {
+    margin: 0px auto;
+    text-align: justify;
+    width: 50%;
+    font-size: 20px;
+    color: $secondTextColor;
+    @media (max-width: 767.98px) {
+      width: 100%;
+    }
+  }
+}
+.title-road-map {
+  font-family: $droidFont;
+  font-size: 34px;
+  color: $textColor;
+  text-align: center;
+  margin-top: 10px;
+}
+.road-map {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  @media (max-width: 575.98px) {
+    margin-top: 27px;
+  }
+  .box-content {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 0px 10px;
+    @media (max-width: 991.98px) {
+      flex-direction: column-reverse;
+    }
+    .tag-name {
+      position: absolute;
+      top: 0px;
+      background-color: $bgSecond;
+      font-size: 30px;
+      width: 280px;
+      font-family: $tahoma;
+      color: $whiteColor;
+      padding: 20px;
+      text-align: center;
+      @media (min-width: 576px) and (max-width: 991.98px) {
+        position: relative;
+        left: 0px;
+        margin-top: 69px;
+      }
+      @media (max-width: 575.98px) {
+        position: relative;
+        left: 0px;
+        margin-top: 29px;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        background-color: $firstColor;
+        width: 20px;
+        height: 100%;
+        border-radius: 10px 0px 0px 10px;
+        top: 0px;
+        left: -25px;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        background-color: $firstColor;
+        width: 20px;
+        height: 100%;
+        border-radius: 0px 10px 10px 0px;
+        top: 0px;
+        right: -25px;
+      }
+    }
+    .tag-name.left {
+      left: 10%;
+      @media (max-width: 991.98px) {
+        left: 0px;
+      }
+    }
+    .tag-name.right {
+      right: 10%;
+      @media (max-width: 991.98px) {
+        right: 0px;
+      }
+    }
+    .number {
+      background-color: $blueSecondColor;
+      border: 2px solid $blueColor;
+      border-radius: 50%;
+      position: relative;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      font-family: $tahoma;
+      font-size: 28px;
+      font-weight: bold;
+      line-height: 50px;
+      color: $whiteColor;
+      &:before {
+        content: "";
+        background-color: $bgSecond;
+        position: absolute;
+        width: 10px;
+        height: 100px;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        @media (max-width: 575.98px) {
+          height: 60px;
+        }
+      }
+      &:after {
+        content: "";
+        background-color: $yellowColor;
+        position: absolute;
+        width: 10px;
+        height: 100px;
+        top: -129%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        @media (max-width: 575.98px) {
+          height: 60px;
+          top: -70%;
+        }
+      }
+    }
+  }
+}
+
+.level-courses {
+  background-color: $bgSecond;
+  font-family: $droidFont;
+  direction: rtl;
+  margin-top: 45px;
+  padding: 20px 20px;
+  .title-level {
+    font-size: 34px;
+    color: $whiteColor;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .container-level {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 10px;
+    width: 70%;
+    margin: 0px auto;
+    .level-card {
+      width: 230px;
+      background-color: $bgthird;
+      border-radius: 10px;
+      font-family: $droidFont;
+      text-align: center;
+      direction: rtl;
+      margin: 10px auto;
+      .title-single-level {
+        color: $bgSecond;
+        font-size: 22px;
+        border-bottom: 4px solid $yellowColor;
+        width: 90%;
+        margin: 0px auto 10px;
+      }
+      .content-level {
+        list-style: none;
+        margin-bottom: 10px;
+        li {
+          font-weight: bold;
+          color: $bgSecond;
+          span {
+            font-family: $tahoma;
+          }
+        }
+      }
+      .price-level {
+        font-size: 18px;
+        background-color: $yellowColor;
+        color: $redColor;
+        border-radius: 10px;
+        span {
+          font-family: $tahoma;
+        }
+      }
+    }
+  }
+}
+
+.title-prices-course {
+  font-family: $droidFont;
+  direction: rtl;
+  font-size: 34px;
+  color: $textColor;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.container-card-prices {
+  display: grid;
+  margin: 20px auto;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 30px;
+  width: 90%;
+}
+
+.duration-course {
+  background-color: $bgSecond;
+  padding: 20px;
+  direction: rtl;
+  font-family: $droidFont;
+  color: $whiteColor;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  .part-duration {
+    flex-basis: 24%;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-left: 1px solid $yellowColor;
+    border-right: 1px solid $yellowColor;
+    @media (min-width: 576px) and (max-width: 991.98px) {
+      flex-basis: 48%;
+      padding: 10px 0px;
+      border-left: none;
+      border-right: none;
+      margin-bottom: 10px;
+    }
+    @media (max-width: 575.98px) {
+      flex-basis: 100%;
+      border-bottom: 1px solid $yellowColor;
+      border-left: none;
+      border-right: none;
+      padding: 10px 0px;
+      margin-bottom: 10px;
+    }
+    .title-info {
+      margin-bottom: 10px;
+    }
+    .number-info {
+      font-family: $tahoma;
+      color: $yellowColor;
+    }
+  }
+}
+
+.requirements {
+  background-color: $bgSecond;
+  padding: 20px 20px 5px 20px;
+  direction: rtl;
+  font-family: $droidFont;
+  color: $whiteColor;
+  margin-bottom: 30px;
+  .line-text {
+    font-size: 20px;
+    line-height: 20px;
+    background-color: $blueSecondColor;
+    margin-bottom: 16px;
+    text-align: right;
+    @media (max-width: 767.98px) {
+      line-height: 1.5;
+      // padding-bottom: 20px;
+      padding: 0px 40px 20px 40px;
+      text-align: justify;
+    }
+
+    .line-number {
+      display: inline-block;
+      font-family: $tahoma;
+      min-height: 100%;
+      text-align: center;
+      padding: 10px 10px;
+      line-height: 20px;
+      margin-left: 15px;
+      font-weight: bold;
+      background-color: $firstColor;
+      @media (max-width: 767.98px) {
+        display: block;
+        margin-left: 0px;
+        margin-bottom: 15px;
+        border-radius: 0px 0px 10px 10px;
+      }
+    }
+  }
+}

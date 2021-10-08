@@ -1,0 +1,21 @@
+@import "../varibales";
+@import "../app.scss";
+
+.soon-title {
+  background-color: $bgSecond;
+  font-family: $droidFont;
+  direction: rtl;
+  padding: 40px;
+  color: $whiteColor;
+  h2 {
+    font-size: 40px;
+    color: $whiteColor;
+    text-align: center;
+    @media (min-width: 576px) and (max-width: 856px) {
+      font-size: 30px;
+    }
+    @media (max-width: 575.98px) {
+      font-size: 24px;
+    }
+  }
+}

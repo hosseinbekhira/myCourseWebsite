@@ -1,0 +1,31 @@
+@import "./varibales";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.stopscrolling {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+
+.for-anytitle {
+  font-family: $droidFont;
+  direction: rtl;
+  font-size: 34px;
+  color: $textColor;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
