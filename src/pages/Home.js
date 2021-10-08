@@ -6,7 +6,7 @@ import "../app.scss";
 
 const mySocial = {
   fbcontentRoom: "https://facebook.com/Content-Room-279217147254771/",
-  fbnajah: "https:facebook.com/enajah2000/",
+  fbnajah: "https://facebook.com/enajah2000/",
   instagram: "https://www.instagram.com/content_room7/",
 };
 
