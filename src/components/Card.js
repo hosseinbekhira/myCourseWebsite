@@ -5,7 +5,7 @@ const fontdroid = {
   fontFamily: "Droid Arabic Kufi, serif",
 };
 const mySocial = {
-  fbnajah: "https:facebook.com/enajah2000/",
+  fbnajah: "https://facebook.com/enajah2000/",
 };
 
 function Card(props) {
